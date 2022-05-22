@@ -29,5 +29,10 @@ float raiz(float num)
 float seno(float num) => (float)Math.Asin(num);
 float cos(float num) => (float)Math.Acos(num);
 int partEntera(float num) => (int)Math.Truncate(num);
+float maximo(float num, float num2) => (float)Math.Max(num, num2);
+float minimo(float num, float num2) => (float)Math.Min(num, num2);
 
-
+Console.WriteLine("Ingrease un nuevo numero para determinar el mayor entre el anterior y este:");
+float num2 = float.Parse(Console.ReadLine());
+Console.WriteLine("\nEl numero maximo ingresado es: " + maximo(num, num2));
+Console.WriteLine("\nEl numero minimo ingresado es: " + minimo(num, num2));
